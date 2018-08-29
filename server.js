@@ -17,36 +17,36 @@ app.use(bodyParser.json());
 //-----FRIENDS ARRAY (DATA)---
 var friendsArray = [
   {
-    name:"Ahmed",
+    name:"tina",
     photo:"#",
     scores:[
         5,
         1, 
         4, 
-        6, 
-        1
+        2, 
+        3
       ]
   }, 
   {
     name:"bob",
     photo:"#",
     scores:[
-        5,
+        2,
+        2, 
+        3, 
         1, 
-        4, 
-        6, 
-        1
+        5
       ]
   }, 
   {
     name:"linda",
     photo:"#",
     scores:[
-        5,
+        1,
         1, 
         4, 
-        6, 
-        1
+        4, 
+        2
       ]
   }
 ]
@@ -71,15 +71,23 @@ app.get("/api/friends", function(req, res) {
 app.post("/api/friends", function(req, res) {
   var newAdd = req.body;
 
-  var scores = [];
-  scores = req.body.q1
-  console.log(scores);
+  var compareArr = [];
+  for (var i = 0; i < friendsArray.length; i++) {
+    var scoreDiff= 0;
+    var numbers = friendsArray[i].scores;
+    scoreDiff+= Math.abs(friendsArray[i].scores - newAdd.scores);
+    function getSum(total, num) {
+      return total + num;
+  }
+  compareArr.push(numbers.reduce(getSum));
   
+  //console.log(compareArr);
+  }
+  console.log(parseFloat(scoreDiff));
 
-
-  friendsArray.push(newAdd);
-  res.json(newAdd);
-})
+    friendsArray.push(newAdd);
+    res.json(newAdd);
+  })
 //------------
 
 // Starts the server to begin listening

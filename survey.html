@@ -203,6 +203,10 @@
         // q10: $("#q10").val().trim()
       };
 
+       // for (var i = 0; i < 11; i++) {
+      //   console.log(q[i]);
+      // } ------------------for loop to go through the 'q1- q10' to add user input to score array
+
        $.post("/api/friends", newAdd)
           .then(function(data) {
         console.log(data);
