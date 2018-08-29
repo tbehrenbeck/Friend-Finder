@@ -21,14 +21,31 @@ var friendsArray = [
     photo:"#",
     scores:[
         5,
-        1,
-        4,
-        4,
+        1, 
+        4, 
+        6, 
+        1
+      ]
+  }, 
+  {
+    name:"bob",
+    photo:"#",
+    scores:[
         5,
-        1,
-        2,
+        1, 
+        4, 
+        6, 
+        1
+      ]
+  }, 
+  {
+    name:"linda",
+    photo:"#",
+    scores:[
         5,
-        4,
+        1, 
+        4, 
+        6, 
         1
       ]
   }
@@ -54,10 +71,13 @@ app.get("/api/friends", function(req, res) {
 app.post("/api/friends", function(req, res) {
   var newAdd = req.body;
 
-  console.log(newAdd);
+  var scores = [];
+  scores = req.body.q1
+  console.log(scores);
   
+
+
   friendsArray.push(newAdd);
-  
   res.json(newAdd);
 })
 //------------
