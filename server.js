@@ -14,6 +14,54 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
+//-----FRIENDS ARRAY (DATA)---
+var friendsArray = [
+  {
+    name:"Ahmed",
+    photo:"#",
+    scores:[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  }
+]
+
+//---HTML ROUTES----
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "home.html"));
+});
+
+app.get("/survey", function(req, res) {
+  res.sendFile(path.join(__dirname, "survey.html"));
+});
+//--------
+
+//---API ROUTES----
+//Display all friends
+app.get("/api/friends", function(req, res) {
+  return res.json(friendsArray);
+})
+
+//Add new friend (incoming survey results)
+app.post("/api/friends", function(req, res) {
+  var newAdd = req.body;
+
+  console.log(newAdd);
+  
+  friendsArray.push(newAdd);
+  
+  res.json(newAdd);
+})
+//------------
+
 // Starts the server to begin listening
 // =============================================================
 app.listen(PORT, function() {
