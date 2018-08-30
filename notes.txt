@@ -1,0 +1,21 @@
+app.post("/api/friends", function(req, res) {
+  var newAdd = req.body;
+
+  
+
+  var compareArr = [];
+  for (var i = 0; i < friendsArray.length; i++) {
+    var numbers = friendsArray[i].scores;
+    function getSum(total, num) {
+      return total + num;
+  }
+  compareArr.push(numbers.reduce(getSum));
+  //console.log(compareArr);
+  }
+
+
+  console.log(newAdd.scores);
+  
+    friendsArray.push(newAdd);
+    res.json(newAdd);
+  })

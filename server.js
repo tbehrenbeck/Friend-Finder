@@ -26,29 +26,29 @@ var friendsArray = [
         2, 
         3
       ]
-  }, 
-  {
-    name:"bob",
-    photo:"#",
-    scores:[
-        2,
-        2, 
-        3, 
-        1, 
-        5
-      ]
-  }, 
-  {
-    name:"linda",
-    photo:"#",
-    scores:[
-        1,
-        1, 
-        4, 
-        4, 
-        2
-      ]
   }
+  // {
+  //   name:"bob",
+  //   photo:"#",
+  //   scores:[
+  //       2,
+  //       2, 
+  //       3, 
+  //       1, 
+  //       5
+  //     ]
+  // }, 
+  // {
+  //   name:"linda",
+  //   photo:"#",
+  //   scores:[
+  //       1,
+  //       1, 
+  //       4, 
+  //       4, 
+  //       2
+  //     ]
+  // }
 ]
 
 //---HTML ROUTES----
@@ -59,7 +59,6 @@ app.get("/", function(req, res) {
 app.get("/survey", function(req, res) {
   res.sendFile(path.join(__dirname, "survey.html"));
 });
-//--------
 
 //---API ROUTES----
 //Display all friends
@@ -71,24 +70,23 @@ app.get("/api/friends", function(req, res) {
 app.post("/api/friends", function(req, res) {
   var newAdd = req.body;
 
-  var compareArr = [];
-  for (var i = 0; i < friendsArray.length; i++) {
-    var scoreDiff= 0;
-    var numbers = friendsArray[i].scores;
-    scoreDiff+= Math.abs(friendsArray[i].scores - newAdd.scores);
-    function getSum(total, num) {
-      return total + num;
-  }
-  compareArr.push(numbers.reduce(getSum));
-  
-  //console.log(compareArr);
-  }
-  console.log(parseFloat(scoreDiff));
+  var userResponses = newAdd.scores;
+  //console.log(userResponses);
 
+    for (var i = 0; i < friendsArray.length; i++) {
+      //console.log('friend = ' + JSON.stringify(friendsArray[i]));
+
+      var diff = 0;
+      for (var j = 0; j < userResponses.length; j++) {
+        diff += Math.abs(friendsArray[i].scores[j] - parseFloat(userResponses[j]));
+        //console.log(diff);
+      }
+    }
+  
     friendsArray.push(newAdd);
     res.json(newAdd);
   })
-//------------
+
 
 // Starts the server to begin listening
 // =============================================================
