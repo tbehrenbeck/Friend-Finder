@@ -7,8 +7,8 @@
   <title>FriendFinder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   <!-- Chosen -->
@@ -92,7 +92,6 @@
       <option value="5">5 (Strongly Agree)</option>
     </select>
 
-<!-- 
     <h3><strong>Question 6</strong></h3>
     <h4>It is often difficult for you to relate to other people’s feelings.</h4>
     <select class="chosen-select" id="q6">
@@ -147,7 +146,7 @@
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5 (Strongly Agree)</option>
-    </select> -->
+    </select> 
 
     <br>
     <br>
@@ -161,28 +160,24 @@
         <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/tbehrenbeck/Friend-Finder" target="=_blank">GitHub Repo</a></p>
       </div>
     </footer>
-
   </div>
 
-    <!-- <div id="results-modal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
+    <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h2 class="modal-title"><strong>Best Match</strong></h2>
+            <h5 class="modal-title" id="exampleModalLabel"><strong>Results</strong></h5>
           </div>
           <div class="modal-body">
             <h2 id="match-name"></h2>
-            <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+            <img id="match-img" src="" alt="">
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
-
       </div>
-    </div> -->
+    </div>
 
   <script type="text/javascript">
     $("#submit-btn").on("click", function(event) {
@@ -196,18 +191,20 @@
           q2= $("#q2").val(),
           q3= $("#q3").val(),
           q4= $("#q4").val(),
-          q5= $("#q5").val()
-          // q6: $("#q6").val().trim(),
-          // q7: $("#q7").val().trim(),
-          // q8: $("#q8").val().trim(),
-          // q9: $("#q9").val().trim(),
-          // q10: $("#q10").val().trim()
+          q5= $("#q5").val(),
+          q6= $("#q6").val(),
+          q7= $("#q7").val(),
+          q8= $("#q8").val(),
+          q9= $("#q9").val(),
+          q10= $("#q10").val()
         ]
       };
 
        $.post("/api/friends", newAdd)
           .then(function(data) {
-        console.log(data);
+        console.log(data.photo);
+        $("#match-name").text(data.name);
+        $("#match-img").attr("src", data.photo);
         alert("calculating match...");
         $("#results-modal").modal("toggle");
       });

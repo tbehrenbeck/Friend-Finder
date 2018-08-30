@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 var friendsArray = [
   {
     name:"tina",
-    photo:"#",
+    photo:"https://thechive.files.wordpress.com/2018/03/i-met-a-mysterious-stranger-in-venice-beach-long-ago-6-photos-1.jpg?quality=85&strip=info&w=954&zoom=2",
     scores:[
         5,
         1, 
@@ -29,7 +29,7 @@ var friendsArray = [
   },
   {
     name:"bob",
-    photo:"#",
+    photo:"https://thechive.files.wordpress.com/2018/03/i-met-a-mysterious-stranger-in-venice-beach-long-ago-6-photos-1.jpg?quality=85&strip=info&w=954&zoom=2",
     scores:[
         2,
         2, 
@@ -40,12 +40,12 @@ var friendsArray = [
   }, 
   {
     name:"linda",
-    photo:"#",
+    photo:"https://thechive.files.wordpress.com/2018/03/i-met-a-mysterious-stranger-in-venice-beach-long-ago-6-photos-1.jpg?quality=85&strip=info&w=954&zoom=2",
     scores:[
         1,
         1, 
         4, 
-        4, 
+        1, 
         2
       ]
   }
@@ -73,21 +73,29 @@ app.post("/api/friends", function(req, res) {
   var userResponses = newAdd.scores;
   //console.log(userResponses);
 
+    var compareArr= [];
     for (var i = 0; i < friendsArray.length; i++) {
       //console.log('friend = ' + JSON.stringify(friendsArray[i]));
 
       var diff = 0;
-      var compareArr= [];
+      
       for (var j = 0; j < userResponses.length; j++) {
         diff += Math.abs(friendsArray[i].scores[j] - userResponses[j]);
       };
-      
+      compareArr.push(diff);
+      //console.log(compareArr)
     };
-    compareArr.push(diff);
-      console.log(compareArr) ///change this
-  
+    
+    // console.log(compareArr);
+    // console.log(Math.min(...compareArr));
+    
+    var matchIndex= compareArr.indexOf(Math.min(...compareArr))
+    
+    var bestMatch = friendsArray[matchIndex];
+    //console.log(bestMatch);
+
     friendsArray.push(newAdd);
-    res.json(newAdd);
+    res.json(bestMatch);
   });
 
 
