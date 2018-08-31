@@ -1,136 +1,136 @@
 //-----FRIENDS ARRAY----
 var friendsArray = [
     {
-      name:"Peter",
+      name:"Zumba",
       photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Peter.png",
       scores:[
           2,
-          4, 
-          4, 
-          5, 
-          2,
-          3,
-          2, 
           1, 
-          5, 
-          1
+          3, 
+          1, 
+          1,
+          5,
+          4, 
+          3, 
+          4, 
+          5
         ]
     },
     {
-      name:"Susan",
+      name:"Barre",
       photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Susan.png",
       scores:[
-          4,
+          1,
+          1, 
+          1, 
+          1, 
+          1,
+          1,
           4, 
           5, 
-          3, 
-          4,
-          1,
           5, 
-          3, 
-          5, 
-          1
+          5
         ]
     }, 
     {
-      name:"Richard",
+      name:"Bikram Yoga",
       photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Richard.png",
       scores:[
-          2,
-          4, 
+          1,
           1, 
           1, 
-          5,
+          1, 
+          1,
           1,
           4, 
+          5, 
           4, 
-          2, 
-          1
-        ]
-    }, {
-      name:"Herman",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Herman.png",
-      scores:[
-          3,
-          1, 
-          2, 
-          2, 
-          2,
-          5,
-          4, 
-          3, 
-          4, 
-          1
-        ]
-    }, {
-      name:"Frans",
-      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Frans.png",
-      scores:[
-          1,
-          2, 
-          4, 
-          2, 
-          4,
-          4,
-          2, 
-          3, 
-          2, 
           4
         ]
     }, {
-      name:"Claire",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Claire.png",
-      scores:[
-          2,
-          5, 
-          3, 
-          1, 
-          4,
-          4,
-          5, 
-          4, 
-          2, 
-          1
-        ]
-    }, {
-      name:"Bernard",
-      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Bernard.png",
-      scores:[
-          2,
-          5, 
-          5, 
-          4, 
-          2,
-          4,
-          4, 
-          5, 
-          4, 
-          1
-        ]
-    }, {
-      name:"David",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/David.png",
+      name:"Boot Camp",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Herman.png",
       scores:[
           3,
-          2, 
+          3, 
+          3, 
+          3, 
+          3,
+          3,
+          5, 
           1, 
-          2, 
+          1, 
+          1
+        ]
+    }, {
+      name:"Spinning",
+      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Frans.png",
+      scores:[
           2,
+          1, 
+          1, 
+          1, 
           1,
+          5,
+          4, 
+          1, 
+          1, 
+          4
+        ]
+    }, {
+      name:"CrossFit",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Claire.png",
+      scores:[
+          5,
+          4, 
           5, 
+          1, 
+          5,
+          4,
           5, 
+          1, 
+          1, 
+          1
+        ]
+    }, {
+      name:"Boxing",
+      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Bernard.png",
+      scores:[
+          3,
+          1, 
+          1, 
+          5, 
+          4,
+          1,
+          1, 
+          1, 
+          1, 
+          1
+        ]
+    }, {
+      name:"Circuit Training",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/David.png",
+      scores:[
+          5,
           2, 
+          5, 
+          3, 
+          1,
+          4,
+          4, 
+          1, 
+          1, 
           3
         ]
     }, {
-      name:"Alfred",
+      name:"Weight Lifting",
       photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Alfred.png",
       scores:[
-          4,
-          4, 
+          2,
           5, 
           1, 
-          1,
+          1, 
+          5,
           1,
           1, 
           1, 
@@ -138,19 +138,19 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Anita",
+      name:"HIIT",
       photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Anita.png",
       scores:[
           5,
-          5, 
-          2, 
           1, 
-          1,
-          3,
+          4, 
+          1, 
+          2,
+          2,
           3, 
-          3, 
-          2, 
-          1
+          1, 
+          1, 
+          2
         ]
     }
   ]
