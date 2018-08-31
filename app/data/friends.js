@@ -1,51 +1,156 @@
 //-----FRIENDS ARRAY----
 var friendsArray = [
     {
-      name:"tina",
-      photo:"https://thechive.files.wordpress.com/2018/03/i-met-a-mysterious-stranger-in-venice-beach-long-ago-6-photos-1.jpg?quality=85&strip=info&w=954&zoom=2",
+      name:"Peter",
+      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Peter.png",
       scores:[
-          5,
-          1, 
+          2,
           4, 
-          2, 
+          4, 
+          5, 
+          2,
           3,
-          5,
-          1, 
-          4, 
           2, 
-          3
+          1, 
+          5, 
+          1
         ]
     },
     {
-      name:"bob",
-      photo:"https://thechive.files.wordpress.com/2018/03/i-met-a-mysterious-stranger-in-venice-beach-long-ago-6-photos-1.jpg?quality=85&strip=info&w=954&zoom=2",
+      name:"Susan",
+      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Susan.png",
       scores:[
-          2,
-          2, 
+          4,
           4, 
-          1, 
-          5,
-          5,
-          1, 
-          4, 
-          2, 
-          3
+          5, 
+          3, 
+          4,
+          1,
+          5, 
+          3, 
+          5, 
+          1
         ]
     }, 
     {
-      name:"linda",
-      photo:"https://thechive.files.wordpress.com/2018/03/i-met-a-mysterious-stranger-in-venice-beach-long-ago-6-photos-1.jpg?quality=85&strip=info&w=954&zoom=2",
+      name:"Richard",
+      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Richard.png",
       scores:[
-          1,
-          1, 
+          2,
           4, 
           1, 
-          2,
-          5,
           1, 
+          5,
+          1,
+          4, 
           4, 
           2, 
+          1
+        ]
+    }, {
+      name:"Herman",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Herman.png",
+      scores:[
+          3,
+          1, 
+          2, 
+          2, 
+          2,
+          5,
+          4, 
+          3, 
+          4, 
+          1
+        ]
+    }, {
+      name:"Frans",
+      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Frans.png",
+      scores:[
+          1,
+          2, 
+          4, 
+          2, 
+          4,
+          4,
+          2, 
+          3, 
+          2, 
+          4
+        ]
+    }, {
+      name:"Claire",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Claire.png",
+      scores:[
+          2,
+          5, 
+          3, 
+          1, 
+          4,
+          4,
+          5, 
+          4, 
+          2, 
+          1
+        ]
+    }, {
+      name:"Bernard",
+      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Bernard.png",
+      scores:[
+          2,
+          5, 
+          5, 
+          4, 
+          2,
+          4,
+          4, 
+          5, 
+          4, 
+          1
+        ]
+    }, {
+      name:"David",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/David.png",
+      scores:[
+          3,
+          2, 
+          1, 
+          2, 
+          2,
+          1,
+          5, 
+          5, 
+          2, 
           3
+        ]
+    }, {
+      name:"Alfred",
+      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Alfred.png",
+      scores:[
+          4,
+          4, 
+          5, 
+          1, 
+          1,
+          1,
+          1, 
+          1, 
+          1, 
+          1
+        ]
+    }, {
+      name:"Anita",
+      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Anita.png",
+      scores:[
+          5,
+          5, 
+          2, 
+          1, 
+          1,
+          3,
+          3, 
+          3, 
+          2, 
+          1
         ]
     }
   ]
