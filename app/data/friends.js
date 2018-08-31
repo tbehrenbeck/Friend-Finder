@@ -1,8 +1,8 @@
 //-----FRIENDS ARRAY----
 var friendsArray = [
     {
-      name:"Zumba",
-      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Peter.png",
+      name:"Brenda- workout preference: Zumba",
+      photo:"https://img.grouponcdn.com/deal/6x89hFVCkbDeREQHZm7V/4S-1000x600/v1/c700x420.jpg",
       scores:[
           2,
           1, 
@@ -17,8 +17,8 @@ var friendsArray = [
         ]
     },
     {
-      name:"Barre",
-      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Susan.png",
+      name:"Carol- workout preference: Barre",
+      photo:"https://pilatesinthegrove.com/wp-content/uploads/2016/10/PilatesInTheGrove-barre-to-go-class.jpg",
       scores:[
           1,
           1, 
@@ -33,8 +33,8 @@ var friendsArray = [
         ]
     }, 
     {
-      name:"Bikram Yoga",
-      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Richard.png",
+      name:"Andrew- workout preference: Bikram Yoga",
+      photo:"https://secure.i.telegraph.co.uk/multimedia/archive/03304/hot-yoga_3304866b.jpg",
       scores:[
           1,
           1, 
@@ -48,8 +48,8 @@ var friendsArray = [
           4
         ]
     }, {
-      name:"Boot Camp",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Herman.png",
+      name:"Stu- workout preference: Boot Camp",
+      photo:"https://hammondportauthority.com/wp-content/uploads/2017/05/boot-camp-.jpg",
       scores:[
           3,
           3, 
@@ -63,8 +63,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Spinning",
-      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Frans.png",
+      name:"Amy- workout preference: Spinning",
+      photo:"https://static.businessinsider.com/image/529cff09ecad04307112461a/image.jpg?_ga=2.83815443.482899016.1535720259-1312193593.1535720259",
       scores:[
           2,
           1, 
@@ -78,8 +78,8 @@ var friendsArray = [
           4
         ]
     }, {
-      name:"CrossFit",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Claire.png",
+      name:"Rich- workout preference: CrossFit",
+      photo:"http://i1.wp.com/lacstrong.com/wp-content/uploads/2016/05/crossfit-nuoro-slide5.jpg?w=1920",
       scores:[
           5,
           4, 
@@ -93,8 +93,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Boxing",
-      photo:"https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Bernard.png",
+      name:"Tony- workout preference: Boxing",
+      photo:"http://www.boxingfighters.co.uk/wp-content/uploads/2015/11/boxer-training.jpg",
       scores:[
           3,
           1, 
@@ -108,8 +108,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Circuit Training",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/David.png",
+      name:"Krysta- workout preference: Circuit Training",
+      photo:"https://streamline.imgix.net/202ac70b-7007-4db3-a1ec-75a76cd7d6d2/db3a5f48-140e-48ca-8d3c-4678513d4fcc/Circuit%20Training.png?ixlib=rb-1.1.0&w=2000&h=2000&fit=max&s=072b8bb1db908aa19738654185ce80b4",
       scores:[
           5,
           2, 
@@ -123,8 +123,8 @@ var friendsArray = [
           3
         ]
     }, {
-      name:"Weight Lifting",
-      photo:"https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Alfred.png",
+      name:"Steven- workout preference: Weight Lifting",
+      photo:"https://s3-media4.fl.yelpcdn.com/bphoto/X5x0wC46Zc1RafmcBA_jCA/o.jpg",
       scores:[
           2,
           5, 
@@ -138,8 +138,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"HIIT",
-      photo:"https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Anita.png",
+      name:"Connor- workout preference: HIIT",
+      photo:"https://www.bodybuilding.com/images/2018/january/what-is-the-best-hiit-3-700xh.jpg",
       scores:[
           5,
           1, 

@@ -1,8 +1,6 @@
 app.post("/api/friends", function(req, res) {
   var newAdd = req.body;
 
-  
-
   var compareArr = [];
   for (var i = 0; i < friendsArray.length; i++) {
     var numbers = friendsArray[i].scores;

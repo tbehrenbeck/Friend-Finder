@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>FriendFinder</title>
+  <title>FitnessFinder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -15,18 +15,20 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   <style>
-
     body {
-      background-image:url('https://wallpapersmug.com/download/1280x2120/d87a86/abstraction_color_splatter.jpg');
+      background-color: black;
+      background-image: url("/images/Bicep-Curl-STACK.png"); 
+      background-repeat: no-repeat;
     }
     .jumbotron {
       background: transparent;
       text-align: center;
+      color: #ffffff;
       text-shadow:
-      -.5px -.5px 0 #f5ffed,
-      .5px -.5px 0 #f5ffed,
-      -.5px .5px 0 #f5ffed,
-      .5px .5px 0 #f5ffed; 
+      -1px -1px 0 #5bc0de,
+      1px -1px 0 #5bc0de,
+      -1px 1px 0 #5bc0de,
+      1px 1px 0 #5bc0de; 
     }
     .footer {
         position: fixed;
@@ -35,24 +37,21 @@
         width: 100%;
     }
     </style>
-
 </head>
 
 <body>
-
   <div class="container">
 
     <div class="jumbotron">
-      <h1>Friend Finder</h1>
+      <h1>Fit Match</h1>
       <hr>
       <h2>Answer a few basic questions </h2>
-      <h2>& find your best overall match.</h2>
+      <h2>& find a workout partner</h2>
       <br>
 
       <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-info"><h4><i class="fas fa-hand-holding-heart fa-lg"></i> Find your match</button></a>
+        <a href="/survey"><button type="button" class="btn btn-lg btn-info"><h4><i class="fas fa-dumbbell fa-lg"></i> Find your match</button></a>
       </div>
-
     </div>
 
     <footer class="footer">
@@ -60,10 +59,7 @@
         <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/tbehrenbeck/Friend-Finder" target="=_blank">GitHub Repo</a></p>
       </div>
     </footer>
-
   </div>
-
-
 </body>
 
 </html>
