@@ -1,8 +1,8 @@
 //-----FRIENDS ARRAY----
 var friendsArray = [
     {
-      name:"Brenda- workout preference: Zumba",
-      photo:"https://img.grouponcdn.com/deal/6x89hFVCkbDeREQHZm7V/4S-1000x600/v1/c700x420.jpg",
+      name:"Brenda! Workout preference: Zumba",
+      photo:"https://s3.amazonaws.com/zumba/img/pid/581299/561fdaf17bc93_med.jpg",
       scores:[
           2,
           1, 
@@ -17,8 +17,8 @@ var friendsArray = [
         ]
     },
     {
-      name:"Carol- workout preference: Barre",
-      photo:"https://pilatesinthegrove.com/wp-content/uploads/2016/10/PilatesInTheGrove-barre-to-go-class.jpg",
+      name:"Carol! Workout preference: Barre",
+      photo:"https://pbs.twimg.com/profile_images/468759903209656320/nRlGi7Lx_400x400.jpeg",
       scores:[
           1,
           1, 
@@ -33,8 +33,8 @@ var friendsArray = [
         ]
     }, 
     {
-      name:"Andrew- workout preference: Bikram Yoga",
-      photo:"https://secure.i.telegraph.co.uk/multimedia/archive/03304/hot-yoga_3304866b.jpg",
+      name:"Addison! Workout preference: Bikram Yoga",
+      photo:"https://fityogateachertraining.com/wp-content/uploads/2014/09/FitYoga-Session-3.jpg",
       scores:[
           1,
           1, 
@@ -48,8 +48,8 @@ var friendsArray = [
           4
         ]
     }, {
-      name:"Stu- workout preference: Boot Camp",
-      photo:"https://hammondportauthority.com/wp-content/uploads/2017/05/boot-camp-.jpg",
+      name:"Stu! Workout preference: Boot Camp",
+      photo:"https://glasgowclub.org/PublishingImages/ClassImages/class-bootcamp-session.jpg?RenditionID=9",
       scores:[
           3,
           3, 
@@ -63,8 +63,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Amy- workout preference: Spinning",
-      photo:"https://static.businessinsider.com/image/529cff09ecad04307112461a/image.jpg?_ga=2.83815443.482899016.1535720259-1312193593.1535720259",
+      name:"Jeremy! Workout preference: Spinning",
+      photo:"https://www.californiafamilyfitness.com/hs-fs/hubfs/17065_Indoor_Cycle_400x400_4-500194-edited.png?t=1535752423764&width=800&name=17065_Indoor_Cycle_400x400_4-500194-edited.png",
       scores:[
           2,
           1, 
@@ -78,8 +78,8 @@ var friendsArray = [
           4
         ]
     }, {
-      name:"Rich- workout preference: CrossFit",
-      photo:"http://i1.wp.com/lacstrong.com/wp-content/uploads/2016/05/crossfit-nuoro-slide5.jpg?w=1920",
+      name:"Rich! Workout preference: CrossFit",
+      photo:"https://profilepicsbucket.crossfit.com/66f98-P227451_6-184.jpg",
       scores:[
           5,
           4, 
@@ -93,8 +93,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Tony- workout preference: Boxing",
-      photo:"http://www.boxingfighters.co.uk/wp-content/uploads/2015/11/boxer-training.jpg",
+      name:"Tony! Workout preference: Boxing",
+      photo:"https://pbs.twimg.com/profile_images/454442435779649536/oGBaJgDS_400x400.jpeg",
       scores:[
           3,
           1, 
@@ -108,8 +108,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Krysta- workout preference: Circuit Training",
-      photo:"https://streamline.imgix.net/202ac70b-7007-4db3-a1ec-75a76cd7d6d2/db3a5f48-140e-48ca-8d3c-4678513d4fcc/Circuit%20Training.png?ixlib=rb-1.1.0&w=2000&h=2000&fit=max&s=072b8bb1db908aa19738654185ce80b4",
+      name:"Joey! Workout preference: Circuit Training",
+      photo:"https://paloaltojcc.org/Portals/5/Media/Fitness-Sports/Groupex/total-body-circuit-training-2.jpg",
       scores:[
           5,
           2, 
@@ -123,8 +123,8 @@ var friendsArray = [
           3
         ]
     }, {
-      name:"Steven- workout preference: Weight Lifting",
-      photo:"https://s3-media4.fl.yelpcdn.com/bphoto/X5x0wC46Zc1RafmcBA_jCA/o.jpg",
+      name:"Steven! Workout preference: Weight Lifting",
+      photo:"https://d1ucq35w3rvlt9.cloudfront.net/73943-thumb.jpg",
       scores:[
           2,
           5, 
@@ -138,8 +138,8 @@ var friendsArray = [
           1
         ]
     }, {
-      name:"Connor- workout preference: HIIT",
-      photo:"https://www.bodybuilding.com/images/2018/january/what-is-the-best-hiit-3-700xh.jpg",
+      name:"Becky! Workout preference: HIIT",
+      photo:"http://www.top.me/wp-content/uploads/2014/11/High-Knees.gif",
       scores:[
           5,
           1, 
