@@ -15,8 +15,11 @@ app.use(bodyParser.json());
 app.use(express.static("app/public"));
 
 // Importing files
-var htmlRoutes = require("./app/routing/htmlRoutes.js")(app);
-var apiRoutes = require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
+
+// var htmlRoutes = require("./app/routing/htmlRoutes.js")(app);
+// var apiRoutes = require("./app/routing/apiRoutes.js")(app);
 
 // apiRoutes(app);
 // htmlRoutes(app);
