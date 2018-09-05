@@ -3,7 +3,7 @@ var bodyParser = require("body-parser");
 
 //---API ROUTES----
 
-function apiRoutes(app) {
+module.exports = function apiRoutes(app) {
   //Display all friends
   app.get("/api/friends", function(req, res) {
     return res.json(friendsArray);
@@ -37,6 +37,6 @@ function apiRoutes(app) {
     friendsArray.push(newAdd);
     res.json(bestMatch);
   });
-}
+};
 
-module.exports = apiRoutes;
+// module.exports = apiRoutes;
